@@ -1,0 +1,222 @@
+*{
+	font-family: "Times New Roman", Times, serif;
+}
+/*HEADER EMPIEZA AQUI*/
+header{
+	background-color: #d1d1d1;
+	width: 100%;
+	height: 150px;
+	border-color: black;
+}
+
+header img{ 
+	width: 10%;
+	height: 60%;
+	margin-left: 2%;
+	margin-top: 1%;
+	float:left;
+	border-radius: 100%;
+}
+
+header h1{
+	margin-left: 15%;
+	margin-top: 4%;
+	float: left;
+	color: white;
+	text-align: center;
+}
+/*HEADER TERMINA AQUI*/
+
+/*NAV EMPIEZA AQUI*/
+nav{
+	height: 40px;
+	background-color: #d1d1d1;
+
+}
+nav a:hover{
+	background-color: black;
+	color: orange;
+}
+nav a{
+	float:right;
+	margin-right: 2%;
+	margin-top: 0.5%;
+	text-decoration: none;
+	color: black;
+}
+/*NAV TERMINA AQUI*/
+
+img{
+	width: 300px;
+	height: 200px;
+	border: 1px solid black;
+}
+/*DIV PREGUNTAS EMPIEZA AQUI*/
+#preguntas{
+	border-radius: 25px;
+	border: 2px solid black;
+}
+
+.respuesta{
+	border: 2px solid black;
+	background-color: white;
+	display: inline-block;
+	width: 22%;
+	height: 30%;
+	margin-top: 5%;
+	margin-left: 8%;
+}
+.respuesta p{
+	padding: 5%;
+}
+.tituloPregunta{
+	width: 100%;
+	text-align: center;
+	background-color: #d1d1d1;
+	height: 50px;
+	padding-top: 5%;		
+}
+/*DIV PREGUNTAS TERMINA AQUI*/
+
+/*DIV IMAGENES EMPIEZA AQUI*/
+#imagenes{
+	background-color: #d1d1d1;
+	width: 100%;
+	margin-top: 5%;
+	border-radius: 2%;
+	column-count: 3;
+	border: 2px solid black;
+}
+
+.imagen{
+	width: 55%;
+	margin:56px;
+	margin-top: 5%;
+	margin-left: 18%;
+	
+}
+/*DIV IMAGENES TERMINA AQUI*/
+
+/*FOOTER EMPIEZA AQUI*/
+footer{
+	background-color: #d1d1d1;
+	width: 100%;
+	height: 7%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	border-radius: 10px;
+	border: 3px solid black;
+}
+#redes{
+	float: right;
+}
+.imgR{
+	width: 20px;
+	height: 20px;
+
+}
+
+#creadorExamen{
+	font-size: 1.5em;
+}
+#creadorExamen:hover{
+	color: orange;
+}
+/*FOOTER TERMINA AQUI*/
+
+
+/*RESPONSIVE EMPIEZA AQUI*/
+
+/*PRIMER PUNTO DE RUPTURA */
+@media screen and (max-width: 900px) {
+	.respuesta{
+		width: 40%;
+		display: inline-block;
+		margin-top: 5%;
+		margin-left: 2%;
+		border: 2px solid black;
+	}
+	
+	#imagenes{
+		column-count: 2;
+	}
+
+	*{
+	font-family: "Times New Roman", Times, serif;
+	}
+	
+}
+/* TERMINA PRIMER PUNTO DE RUPTURA */
+
+/*SEGUNDO PUNTO DE RUPTURA */
+@media screen and (max-width: 500px) {
+	*{
+		font-family: "Times New Roman", Times, serif;
+	}
+
+	header{
+		background-color: #d1d1d1;
+		width: 100%;
+		height: 200px;
+		border-radius: 2px;
+	}
+
+	header img{
+		width: 20%;
+		height: 20%;
+		margin-top: 5%;
+		margin-left: 28%;
+	}
+
+	header h1{
+		margin-left: 15%;
+		margin-top: 5%;
+	}
+
+	nav a{
+		margin-right: 3.5%;
+		margin-top: 2.3%;
+		text-decoration: none;
+		font-size: 10px;
+		font-weight: bold;
+	}
+
+	nav a:hover{
+		background-color: black;
+		color: orange;
+	}
+
+	#preguntas{
+		height: 50%;
+		border: 1px solid black;
+	}
+
+	.respuesta{
+		width: 90%;
+		display: inline-block;
+		margin-top: 10%;
+		margin-left: 7%;
+	}
+
+	#imagenes{
+		column-count: 1;
+	}
+
+	.imagen{
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	header img{
+		margin-top: 5%;
+	}
+
+	header h1{
+		text-align: center;
+		font-size: 25px;
+		color: black;
+	}
+}
+/*TERMINA SEGUNDO PUNTO DE RUPTURA */
+
+/*RESPONSIVE TERMINA AQUI*/
