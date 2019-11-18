@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li{
+	display: table-cell;
+}
+img{
+	width: -1000px;
+	height: 500px;
+}
+div{
+	width: -1000px;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid black;
+}
+ul{
+	position: absolute;
+	animation-name: mover;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+@keyframes mover{
+    0%{
+        left: 0;
+    }   
+    25%{
+        left: 100px;
+    }
+    50%{ 
+        left: 500px;
+    }
+    75%{
+        left: 100px;
+    }
+    100%{
+        left: 0px;
+    }
+    
+}

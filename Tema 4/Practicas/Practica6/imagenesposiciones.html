@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica 5</title>
+	<link rel="stylesheet" type="text/css" href="css5.css">
+</head>
+<body>
+	<div id="main">
+		<div id="main2">
+			<img src="1.jpg"/>
+			<div id="imagen1">
+				<img src="2.jpg"><p>Bombero apagando Incendio</p>
+			</div>
+			<div id="imagen2">
+				<img src="3.jpg"><p>Helicoptero apagando Incendio</p>
+			</div>
+			<div id="imagen3">
+				<img src="4.jpg"><p>Camion de bomberos</p>
+			</div>
+			
+		</div>
+	</div>
+
+<style>
+
+#main{
+  padding:0px;
+  margin-top: 0px;
+}
+
+#main2{
+  position: relative;
+  left: 15%;
+  width: 50%;
+}
+
+#main2 img{
+  width: 100%;
+}
+
+#imagen1, #imagen2,#imagen3{
+  width: 40%;
+  display: none;
+}
+
+img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+p{
+  display: none;
+  margin-top: 0px;
+}
+#imagen1:hover p,#imagen2:hover p,#imagen3:hover p{
+  background-color: red;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+  color: solid black;
+}
+#imagen1{
+  position: absolute;
+  top:35%;
+  left:30%;
+  width:30%;
+}
+#main2:hover #imagen1,#main:hover #imagen2,#main:hover #imagen3{
+  display: block;
+}
+#imagen2{
+  position: absolute;
+  top:49%;
+  right:15%;
+  width:20%;
+}
+
+#imagen3{
+  position:absolute;
+  top:20%;
+  right:80%;
+  width:20%;
+}
+
+
+</style>
+
+</body>
+</html>

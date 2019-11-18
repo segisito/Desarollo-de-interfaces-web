@@ -1,0 +1,77 @@
+table{
+	width: 100%;
+	border-spacing: 5px;
+}
+fieldset{
+	visibility:hidden;
+}
+
+input[type=text] {
+	color: grey;
+	font-size: 20px;
+	border-radius: 5px;
+	box-shadow: 1px;
+}
+
+input[type=email] {
+	color: grey;
+	font-size: 20px;
+	border-radius: 5px;
+	box-shadow: 1px;
+}
+input[type=url] {
+	color: grey;
+	font-size: 20px;
+	border-radius: 5px;
+	box-shadow: 1px;
+}
+
+input[type=submit] {
+	color: white;
+	width: 200px;
+	text-align: center;
+	background-color:#67b12f;
+	padding: 7.5px;
+	border-radius: 5px;
+	border-color: #67b12f;
+}
+textarea{
+	color: grey;
+	font-size:12px;
+	border-radius: 5px;
+	box-shadow: 1px;
+}
+body{
+	width:65%;
+	margin: 0;
+	position: relative;
+	padding-left:20%;
+	font-family: TimesNewRoman;
+
+}
+#campo{
+	text-align: right;
+	color: red;
+	margin-top: -50px;
+}
+
+.hr{
+	border-bottom: 1.5px solid #f0f0f0f0;
+}
+input:invalid{
+	background-color: #fc7d77;
+}
+input:valid{
+	background-color: #73f56c;
+}
+#buscar{
+	width: 55px;
+	height: 27px;
+	float: right;
+}
+#buscar2{
+	float: right;
+}
+.rojo{
+	color:red;
+}

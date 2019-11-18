@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <LINK REL="stylesheet" TYPE="text/css" HREF="estiloscalculadora.css">
+</head>
+<body>
+<div id="principal">
+    <div id="calculadora" name="calculadora">
+        <h1>CASIO LIGHT</h1>
+        <br>
+    <label>Haz algun calculo para ver el resultado.</label>
+    <br>
+    <br>
+    <input type="text" id="resultado" readonly="readonly" value="0">
+    <br>
+    <input class="boton" type="button" value="1" onclick="uno()">
+    <input class="boton" type="button" value="2" onclick="dos()">
+    <input class="boton" type="button" value="3" onclick="tres()">
+    <input class="boton" type="button" value="+" class="operadores" onclick="suma()">
+    <br>
+    <input class="boton" type="button" value="4" onclick="cuatro()">
+    <input class="boton" type="button" value="5" onclick="cinco()">
+    <input class="boton" type="button" value="6" onclick="seis()">
+    <input class="boton" type="button" value="-" class="operadores" onclick="menos()">
+    <br>
+    <input class="boton" type="button" value="7" onclick="siete()">
+    <input class="boton" type="button" value="8" onclick="ocho()">
+    <input class="boton" type="button" value="9" onclick="nueve()">
+    <input class="boton" type="button" value="*" class="operadores" onclick="multiplicar()">
+    <br>
+    <input class="boton" type="button" value="0" onclick="cero()">
+    <input id="boton"    type="reset"  value="C" class="operadores" onclick="borrar()">
+    <input class="boton" type="button" value="/" class="operadores" onclick="dividir()">
+    <input class="boton" type="button" value="=" onclick="igual()">
+    <br>
+    <input class="boton" type="button" id="expan" value="Expander" onclick="muestra_oculta('contenido')">
+    </div>
+    <div id="contenido">
+        <form id="expander">
+            <input class="boton2" class="operadores" type="button" value="%" >
+            <input class="boton2" class="operadores" type="button" value="√" >
+            <input class="boton2" class="operadores" type="button" value="(" >
+            <input class="boton2" class="operadores" type="button" value=")" >
+        </form>
+    </div>
+</div>
+
+
+<style>
+
+
+body{   
+    background-image: url(2.jpg);
+
+}
+h1 ,label{
+    color: white;
+}
+label{
+    font-size: 18px;
+}
+#calculadora {
+  width: 350px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: auto;
+  float: right;
+  background-color: #3e403f;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #fcaf3b, #f25c2a);
+  box-shadow: 0 10px 28px #d8724a;
+
+}
+#expander {
+  width: 350px;
+  text-align: center;
+  background-color: #3e403f;
+  margin-top: -8.2px;
+  position: absolute;
+  margin-left: 76.2%;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #fcaf3b, #f25c2a);
+  box-shadow: 0 10px 28px #d8724a;
+ 
+}
+input[id=resultado] {
+    width: 50%;
+    padding:20px 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: #4c455a;
+    background-color: #91c4ab;
+    box-shadow: 0 2px 3px #d8724a;
+    transition: color .6s ease-in-out;
+
+}
+.boton{
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    margin: 4px;
+    background-color: blue;
+    background: transparent;
+    border: none;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+/*.boton:hover{
+    color: orange;
+    font-size: 28px;
+}*/
+
+.boton2{
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    margin: 3px;
+    background-color: blue;
+    background: transparent;
+    border: none;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+/*.boton2:hover{
+    color: orange;
+    font-size: 30px;
+}*/
+#boton{
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    margin: 4px;
+    background: transparent;
+    border: none;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+/*#boton:hover{
+        color: #ebc034;
+    font-size: 30px;
+}*/
+input[type=reset] {
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: blue;
+    background: transparent;
+    border: none;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+/*#expan:hover{
+    font-size: 30px;
+}
+.operadores:hover{
+        background: rgba(0, 0, 0, 0.1);
+        color: orange;
+        font-size: 30px;
+}*/
+#contenido{
+  margin-top:2px;
+  padding:5px;
+  width:396px;
+  font-size:14px;
+  text-align: justify;
+  width: 100%;
+  margin-right: 20px;
+  float: left;
+
+}
+ 
+@media screen and (max-width:550px){
+    #principal{
+        
+        width: 100%;
+      }
+      
+      #calculadora {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+        margin: auto;
+        float: left;
+        background-color: #3e403f;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #fcaf3b, #f25c2a);
+        box-shadow: 0 10px 28px #d8724a;
+
+      }
+      #expander {
+        width: 100%;
+        text-align: center;
+        background-color: #3e403f;
+        margin-top: -2%;
+        position: absolute;
+        margin-left: -2%;
+       
+      }
+      label{
+          font-size: 200%;
+      }
+
+      #contenido{
+        margin-top:2px;
+        padding:5px;
+        width:50%;
+        font-size:14px;
+        border-radius: 15px;
+        text-align: justify;
+        width: 100%;
+        margin-right: 40px;
+        float: left;
+
+      }
+
+      .boton{
+          color: white;
+          padding: 25px;
+          font-size:25px;
+          margin: 6px;
+          background-color: blue;
+          background: transparent;
+          border: none;
+          text-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+      }
+}
+@media screen and  (max-width:920px){
+      #principal{
+          
+          width: 100%
+      }
+    }
+
+</style>
+
+<script type="text/javascript">
+        
+    function muestra_oculta(div){
+    if (document.getElementById){ 
+    var el = document.getElementById(div); 
+    el.style.display = (el.style.display == 'none') ? 'block' : 'none';
+    }
+
+    }
+    window.onload = function(){
+    muestra_oculta('contenido');
+    }
+
+    var elementos = document.getElementsByClassName("boton2");
+
+    
+    for(var i = 0; i < elementos.length; i++){
+        elementos[i].addEventListener("mouseover", porencima);
+        elementos[i].addEventListener("mouseout", alquitar);
+    }
+
+    
+    function porencima() {
+        this.style.color = "orange";
+    }
+
+    function alquitar() {
+        this.style.color = "White";
+    }
+
+  // TODO FUNCIONES CALCULADORA
+
+
+
+  var resultado = 0;
+  var operando = 0;
+
+
+  function uno(){
+    agregar('1');
+  }
+  function dos(){
+    agregar('2');
+  }
+
+  function tres(){
+    agregar('3');
+  }
+
+  function cuatro(){
+    agregar('4');
+  }
+
+  function cinco(){
+    agregar('5');
+  }
+  function seis(){
+    agregar('6');
+  }
+
+  function siete(){
+    agregar('7');
+  }
+
+  function ocho(){
+    agregar('8');
+  }
+  function nueve(){
+    agregar('9');
+  }
+
+  function cero(){
+    agregar('0');
+  }
+    function agregar(letra) {
+      var temp = document.getElementById('resultado').value;
+
+      if(temp < 10000000){
+        temp += letra;
+      }
+
+      temp = parseFloat(temp);
+      operando = temp;
+
+      document.getElementById('resultado').value = temp;
+    }
+
+    function suma() {
+      resultado = document.getElementById('resultado').value;
+      operando = 0;
+      operacion = "+";
+      document.getElementById('resultado').value = "0";
+    }
+
+    function dividir() {
+      var temp = document.getElementById('resultado').value;
+
+      temp = parseFloat(temp);
+
+      resultado = temp;
+      operacion = "/";
+
+      document.getElementById('resultado').value = "0";
+    }
+
+    function multiplicar() {
+      resultado = document.getElementById('resultado').value;
+      operando = 0;
+      operacion = "*";
+      document.getElementById('resultado').value = "0";
+    }
+
+    function borrar(){
+      document.getElementById('resultado').value = 0;
+    }
+
+    function igual() {
+      calcular();
+      document.getElementById('resultado').value = resultado;
+    }
+
+    function restar() {
+      resultado = document.getElementById('resultado').value;
+      operando = 0;
+      operacion = "-";
+      document.getElementById('resultado').value = "0";
+    }
+
+    function calcular() {
+      var op1 = parseFloat(resultado);
+      var op2 = parseFloat(operando);
+
+      switch(operacion) {
+        case '+':
+          resultado = op1 + op2;
+          break;
+        case '-':
+          resultado = op1 - op2;
+          break;
+        case '*':
+          resultado = op1 * op2;
+          break;
+        case '/':
+          resultado = op1 / op2;
+        default:
+          resultado = operando;
+      }
+    }
+
+
+</script>
+</body>
+</html>
+

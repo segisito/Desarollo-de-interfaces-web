@@ -1,0 +1,78 @@
+header{
+    background-color:#feffd4;
+    width: 100%;
+    border: 1px solid black;
+}
+nav{
+    background-color:#d8d8cd;
+    margin:5px;
+    bottom: 15px;
+    position: relative;
+    width: 100%;
+
+}
+ul li{
+    display: inline-block;
+    margin-left: 5px;
+
+}
+ul li:last-child{
+    text-decoration: underline;
+}
+
+h4{
+   color: grey;
+   margin: 0px;;
+}
+h2{
+    margin: 0px;
+}
+h3{
+    margin: 0px;
+}
+.todo{
+    margin-left: 35px;
+}
+.primero{
+    background-color:#feffd4;
+    border: 2px solid black;
+    padding: 20px;
+    width: 70%;
+    margin:0;
+
+
+}
+.segundo{
+    background-color:#feffd4;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 20px;
+    width: 70%;
+
+    
+}
+.comentario{
+    position: relative;
+    text-align: right;
+}
+aside{
+    background-color:#d8d8cd;
+    width: 350px;
+    height: 100px;;
+    top: 200px;
+    right: 65px;
+    padding-left: 16px;
+    float: right;
+    
+}
+footer{
+    text-align: center;
+}
+#titulo{
+    margin:5px;
+    padding: 1px;
+    padding-left: 35px;
+}
+figcaption{
+    margin: 0px;
+}

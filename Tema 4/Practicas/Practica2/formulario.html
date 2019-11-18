@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="formulario.css">
+</head>
+<body>
+	<div class="form">
+<form >
+		<h1>INFORMACION DE PRODUCTOS</h1>
+		<fieldset>
+			<legend><h3>Datos Basicos</h3></legend>
+
+			<label>Nombre</label>
+			<br>
+			<input type="text" name="nombre"/>
+			<br><br>
+			<label>Descripcion</label>
+			<br>
+			<textarea>Escribe algo</textarea>
+			<br>
+			<label>Foto</label>
+			<input type="file" name="archivo"/>
+		</fieldset>	
+
+		<fieldset>
+			<legend><h3>Datos Economicos</h3></legend>
+			<label>Precio</label>
+			<input type="text" name="nombre" size="5"> €</>
+			<label>Impuestos</label>
+			<select>
+			  <option value="4%">4%</option>
+			  <option value="41%">51%</option>
+			  <option value="42%">31%</option>
+			  <option value="43%">81%</option>
+			</select>
+			<br>
+			<label>Promocion</label>
+			<br>
+			<input type="radio" name="archivo"/>Ninguno<br>
+			<input type="radio" name="archivo"/>Transporte Gratuito<br>
+			<input type="radio" name="archivo"/>Descuento 5%<br>
+		</fieldset>
+
+		<fieldset>
+			<table>
+				<legend><h3>Probando etiquetas nuevas</h3></legend>
+				<tr>
+					<td><label>Introduce el email:</label></td> <td><input type="text" name="email"/></td>
+				</tr>
+				<tr>
+					<td><label>Buscador:</label></td><td><input type="text" name="buscador"/></td>
+				</tr>
+				<tr>
+					<td><label>Introduce url:</label></td><td><input type="text" name="url"/></td>
+				</tr>
+			</table>
+			<input type="submit" name="enviar formulario">
+		</fieldset>
+	</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TestExamen</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<!-- Cabecera-->
+	<header>
+		<img src="logo.jpg">
+		<h1>EXAMEN PRACTICO DIW</h1>
+	</header>
+
+	<!--Navegador -->
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">Productos&nbsp;&nbsp;&nbsp;|</a>
+		<a href="#">Caracteristicas&nbsp;&nbsp;&nbsp;|</a>
+		<a href="#">Comparativas&nbsp;&nbsp;&nbsp;|</a>
+		<a href="#">Contacto&nbsp;&nbsp;&nbsp;|</a>
+		<a href="#">Información&nbsp;&nbsp;&nbsp;|</a>
+	</nav>
+
+	<!-- preguntas -->
+	<div id="preguntas">
+		
+		<div class="pregunta">
+			<div class = "titulo"><a>Pregunta 1</a></div>
+			<input type="checkbox" class="leermas" id="micheck" />
+			<p class="recoger">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s<span class="mastexto">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+			</p>
+			<label for="micheck" class="estirar"></label>
+		</div>
+		<div class="pregunta">
+			<div class = "titulo"><a>Pregunta 2</a></div>
+			<input type="checkbox" class="leermas" id="micheck" />
+			<p class="recoger">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s<span class="mastexto">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+			</p>
+			<label for="micheck" class="estirar"></label>
+		</div>
+		<div class="pregunta">
+			<div class = "titulo"><a>Pregunta 3</a></div>
+			<input type="checkbox" class="leermas" id="micheck" />
+			<p class="recoger">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s<span class="mastexto">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+			</p>
+			<label for="micheck" class="estirar"></label>
+		</div>
+		<!-- Bloque de imagenes-->
+	<div id="imagenes">
+		<img src="1.jpg" class="imagen">
+		<img src="2.jpg" class="imagen">
+		<img src="3.jpg" class="imagen">
+		<img src="5.jpg" class="imagen">
+		<img src="6.jpg" class="imagen">
+		<img src="7.jpg" class="imagen">
+	</div>
+
+	<!-- Pie de pagina-->
+	<footer>
+		<p id="creador">Creado por: Sergiy Ivancheskul</p>
+	
+		<div class="contenedor">
+			<a href="#" class="Instagram"></a>
+		</div>
+		<div class="contenedor">
+			<a href="#" class="snapchat"></a>
+		</div>
+	</footer>
+
+	</div>
+
+
+	<style>
+/*Estilo para el leer mas*/
+.mastexto {
+	 opacity: 0;
+	 max-height: 0;
+	 font-size: 0;
+	 transition: .25s ease;
+}
+
+.leermas {
+	 display: none;
+	 margin-left: 20%;
+}
+
+.leermas:checked ~ .recoger .mastexto {
+	 opacity: 1;
+	 font-size: inherit;
+	 max-height: 999em;
+}
+
+.leermas ~ .estirar:before {
+ 	content: 'Leer mas';
+}
+
+.leermas:checked ~ .estirar:before {
+ 	content: 'Leer menos';
+}
+
+.estirar {
+	 cursor: pointer;
+	 display: inline-block;
+	 padding: 0 .5em;
+	 color: #666;
+	 font-size: .9em;
+	 line-height: 2;
+	 border: 1px solid #ddd;
+	 border-radius: .25em;
+}
+	</style>
+</body>
+</html>

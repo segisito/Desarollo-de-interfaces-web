@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<input type="checkbox" class="leermas" id="micheck" />
+<p class="recoger">Aquí aparecera el texto de mi segundo mensajeLorem ipsum
+dolor sit amet, consectetur adipisicing elit.<span class="mastexto">
+Aspernatur minus, eum mollitia doloribus voluptatum ducimus est harum dolore
+veritatis quaerat ea hic. Dolorum, natus. Placeat ipsa maiores imquod ullam
+provident!</span>
+</p>
+<label for="micheck" class="estirar"></label>
+
+
+<style>
+.mastexto {
+ opacity: 0;
+ max-height: 0;
+ font-size: 0;
+ transition: .25s ease;
+}
+.leermas {
+ display: none;
+}
+.leermas:checked ~ .recoger .mastexto {
+ opacity: 1;
+ font-size: inherit;
+ max-height: 999em;
+}
+.leermas ~ .estirar:before {
+ content: 'Show more';
+}
+.leermas:checked ~ .estirar:before {
+ content: 'Show less';
+}
+.estirar {
+ cursor: pointer;
+ display: inline-block;
+ padding: 0 .5em;
+ color: #666;
+ font-size: .9em;
+ line-height: 2;
+ border: 1px solid #ddd;
+ border-radius: .25em;
+}
+</style>
+</body>
+</html>

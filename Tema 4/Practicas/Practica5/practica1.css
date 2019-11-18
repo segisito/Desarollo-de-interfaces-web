@@ -1,0 +1,169 @@
+.cabecera {
+	position: relative;
+}
+.cabecera form {
+	position: absolute;
+	top:  0;
+	right: 0;
+}
+
+.navegador {
+	padding: 0.5em;
+	background-color: blue;
+	margin-bottom: 1em;
+}
+.navegador ul {
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 1em;
+}
+
+.noticias ul {
+	padding: 0;
+	list-style-type: none;
+}
+.noticias ul li {
+
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+.navegador a {
+	color: white;
+}
+
+.aside_left, .sections, .aside_right {
+	float: left;
+}
+
+.aside_left {
+	width: 20%;
+}
+.sections {
+	margin: 1em;
+	margin-top: 0;
+	width: 60%;
+}
+.aside_right {
+	border: 1px solid orange;
+	width: 17%;
+	padding: 0em;
+}
+hr {
+	clear: both;
+}
+.noticias {
+	margin-bottom: 1em;
+	padding: 0.5em;
+	border: 1px solid lightblue;
+	background-color: #D5FFFB;
+}
+.publicidad {
+	padding: .5em;
+	border: 1px dotted orange;
+	background-color: #FEE1B3;
+}
+.aside_right div {
+	margin: 0;
+	padding: 0.5em;
+}
+.aside_right h3 {
+	margin: 0;
+	padding: 0.25em;
+	color: white;
+	font-family: sans-serif;
+	background-color: orange;
+}
+section {
+	margin: 1em;
+}
+section img {
+	margin: 0.5em;
+	border: 1px solid black;
+	float: left;
+	width: 20%;
+}
+section video{
+	margin: 0.5em;
+	border: 1px solid black;
+	float: left;
+	width: 20%;
+}
+
+section h2 {
+	margin: 0;
+	font-family: sans-serif;
+	color: orange;
+}
+.pie li{
+	
+	display: inline-block;
+	margin:5px;
+}
+#copy{
+	float: right;
+	margin-top: 1em;
+}
+
+
+
+
+
+@media screen and (min-width:452px) and (max-width:758px){
+	#navegador ul{
+		column-count: 3;
+		background-color: #44378B;
+	}
+	#navegador{
+	margin-top:25px;
+	}
+	#buscar{
+	width: 100%;
+	float:left;
+	text-align: left;
+	margin-right: 6px;
+	margin-top: 2px;
+
+	}
+	.aside_left{
+	width: 20%;
+	float: left;
+	}
+}
+
+
+@media screen and (max-width:758px){
+	.aside_right{
+		visibility: hidden;
+	}
+	.aside_left{
+		width: 20%;
+		float: left;
+	}
+}
+
+
+@media screen and (max-width:452px){
+	#navegador{
+	column-count: 3;
+		background-color: #56A8FF;
+	}
+	.aside_left{
+		width: 20%;
+	float: left;
+	}
+}
+	#buscar{
+	width: 100%;
+	float:left;
+	text-align: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	
+	}

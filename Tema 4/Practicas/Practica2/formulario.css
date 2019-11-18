@@ -1,0 +1,33 @@
+header{
+	font-style: normal;
+}
+*{
+	font-family: arial;
+}
+body{
+	background-color: lightblue;
+	font-style: italic;
+	width: 60%;
+	padding-left: 20%;
+
+}
+fieldset{
+	background-color:#f7dcf6;
+	border-radius: 20px;
+}
+legend{
+	color:#9593fa;
+	margin.bottom: -25px;
+}
+label{
+	font-style: italic;
+}
+h1{
+	color: white;
+	text-align: center;
+}
+textarea{
+	border-radius: 10px;
+	background-color: lightblue;
+
+}

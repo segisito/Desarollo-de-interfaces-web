@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabla Responsive</title>
+</head>
+<body>
+
+<table>
+	<thead>
+	<tr>
+		<th>Nombre</th>
+		<th>Apellido</th>
+		<th>Nota</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Sergio</td>
+		<td>Cabral</td>
+		<td>4.99</td>
+	</tr>
+	<tr>
+		<td>Eduardo</td>
+		<td>Bracho</td>
+		<td>10</td>
+	</tr>
+	<tr>
+		<td>Sergiy</td>
+		<td>Ivancheskul</td>
+		<td>10</td>
+	</tr>
+	</tbody>
+</table>
+
+
+<style>
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+tr:nth-of-type(odd) { 
+  background: lightblue; 
+}
+th { 
+  background: #428df5; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #d1d1d1; 
+  text-align: left; 
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 750px) and (max-device-width: 900px)  {
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	thead tr{ 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr{ 
+		border: 1px solid #d1d1d1; 
+	}
+	
+	td{ 
+		border: none;
+		border-bottom: 1px solid #d1d1d1; 
+		position: relative;
+		padding-left: 50%; 
+	}	
+	td:before{ 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+
+
+</style>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica FlexBox</title>
+</head>
+<body>
+	<div id="Principal">
+		<div id="HijoPrincipal"><p>HijoPrincipal</p></div>
+	</div>	
+	<div id="Principal2">
+		<div id="HijoPrincipal2"><p>HijoPrincipal2</p></div>
+		<div id="HijoPrincipal3"><p>HijoPrincipal3</p></div>
+		<div id="HijoPrincipal4"><p>HijoPrincipal4</p></div>
+	</div>
+	<div id="Principal3">
+		<div id="HijoPrincipal3"><p>HijoPrincipal3</p></div>
+	</div>
+	<style type="text/css" media="screen">
+
+	#Principal,#Principal2,#Principal3{
+		border: 2px solid black;
+		display: flex;
+	}
+	#Principal{
+		justify-content: center;
+	}
+	#Principal2{
+		align-items: stretch;
+		justify-content: center;
+	}
+	#Principal3{
+		justify-content: center;
+	}
+	#HijoPrincipal{	
+
+		background-color: lightblue;
+	}
+	#HijoPrincipal2{
+		
+		background-color: green;
+
+	}
+	#HijoPrincipal3{
+		background-color: white;
+	}
+	#HijoPrincipal4{
+		background-color: green;
+	}
+	#HijoPrincipal3{
+		background-color: yellow;
+	}
+
+
+
+
+
+	/*@media screen and (max-width: 600px){
+		#padre{
+
+			flex-direction: column;
+		}	
+
+	}*/
+	</style>
+</body>
+</html>
